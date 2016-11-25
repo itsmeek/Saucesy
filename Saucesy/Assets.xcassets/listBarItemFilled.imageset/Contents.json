@@ -3,17 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "listBarIcon.png"
+      "filename" : "listBarItemFilled.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "listBarIcon@2x.png"
+      "filename" : "listBarItemFilled@2x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "listBarIcon@3x.png"
+      "filename" : "listBarItemFilled@3x.png"
     }
   ],
   "info" : {

@@ -3,17 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "homeBarIcon.png"
+      "filename" : "homeBarItem.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "homeBarIcon@2x.png"
+      "filename" : "homeBarItem@2x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "homeBarIcon@3x.png"
+      "filename" : "homeBarItem@3x.png"
     }
   ],
   "info" : {
