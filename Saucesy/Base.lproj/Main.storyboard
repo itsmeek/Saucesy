@@ -17,7 +17,104 @@
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="t1W-Ro-d7F">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VdX-OV-G1j">
+                                    <size key="itemSize" width="375" height="362"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="3to-CB-5IG">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="362"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="362"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foodImage" translatesAutoresizingMaskIntoConstraints="NO" id="VL0-iv-LPS">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="222" id="w1U-IW-m0z"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="f2Q-sc-fLa">
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salsa Verde Chicken Bake" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rpy-jf-wGD">
+                                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                                                            <color key="textColor" red="0.1764705882352941" green="0.25098039215686274" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5h7-kk-H7g">
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="335" id="NfS-PC-cy1"/>
+                                                                <constraint firstAttribute="height" constant="58" id="cAc-Id-ZFO"/>
+                                                            </constraints>
+                                                            <string key="text">1 can (29 oz) pumpkin puree, 1 cup brown sugar, ¾ cup water, 1 tsp. vanilla extract, 1 tsp. cinnamon, 1 tsp. ground ginger
+
+  </string>
+                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                                            <color key="textColor" red="0.34901960784313724" green="0.41176470588235292" blue="0.49411764705882355" alpha="0.83451947773972601" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="PiX-s8-oi4">
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="4KI-9k-QS8">
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1033" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBO-H9-p7f">
+                                                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
+                                                                            <color key="textColor" red="0.91944831609725952" green="0.32635855674743652" blue="0.33498600125312805" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CALORIES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4XN-bB-CVW">
+                                                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
+                                                                            <color key="textColor" red="0.1764705882352941" green="0.25098039215686274" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="uvL-VD-ad4">
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6U-8t-gmw">
+                                                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
+                                                                            <color key="textColor" red="0.9194483161" green="0.32635855670000002" blue="0.3349860013" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SERVINGS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72y-4K-oRW">
+                                                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
+                                                                            <color key="textColor" red="0.1764705882352941" green="0.25098039215686274" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.55260532765236703" green="0.91944831609725952" blue="0.87846725594075881" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="VL0-iv-LPS" firstAttribute="top" secondItem="3to-CB-5IG" secondAttribute="top" id="23K-eY-HK6"/>
+                                            <constraint firstAttribute="bottom" secondItem="f2Q-sc-fLa" secondAttribute="bottom" constant="12" id="62H-Dw-DQ8"/>
+                                            <constraint firstAttribute="trailing" secondItem="f2Q-sc-fLa" secondAttribute="trailing" constant="20" id="KqE-hp-ofg"/>
+                                            <constraint firstItem="VL0-iv-LPS" firstAttribute="leading" secondItem="3to-CB-5IG" secondAttribute="leading" id="TFx-N1-MEB"/>
+                                            <constraint firstItem="f2Q-sc-fLa" firstAttribute="leading" secondItem="3to-CB-5IG" secondAttribute="leading" constant="20" id="ff4-HP-D0X"/>
+                                            <constraint firstItem="f2Q-sc-fLa" firstAttribute="top" secondItem="VL0-iv-LPS" secondAttribute="bottom" constant="12" id="n8T-lr-9yp"/>
+                                            <constraint firstAttribute="trailing" secondItem="VL0-iv-LPS" secondAttribute="trailing" id="nCC-oJ-igX"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="t1W-Ro-d7F" secondAttribute="trailing" id="UYg-S9-mza"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="t1W-Ro-d7F" secondAttribute="bottom" id="cIa-Nv-To8"/>
+                            <constraint firstItem="t1W-Ro-d7F" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="oaN-0R-Jmi"/>
+                            <constraint firstItem="t1W-Ro-d7F" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="wD2-nv-ZX8"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Saucesy" id="eeV-XG-gbQ">
                         <barButtonItem key="leftBarButtonItem" image="searchNavIcon" id="S8G-vM-UOH">
@@ -135,7 +232,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PSw-7x-o2R" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="homeBarItem" id="acW-dT-cKf"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="noh-0k-sfi">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="noh-0k-sfi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.91944831609725952" green="0.32635855674743652" blue="0.33498600125312805" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -153,6 +250,7 @@
     <resources>
         <image name="basketBarIcon" width="23" height="22"/>
         <image name="filterNavIcon" width="22" height="21"/>
+        <image name="foodImage" width="375" height="222"/>
         <image name="heartBarItem" width="22" height="20"/>
         <image name="homeBarItem" width="21" height="22"/>
         <image name="listBarItem" width="19" height="22"/>
