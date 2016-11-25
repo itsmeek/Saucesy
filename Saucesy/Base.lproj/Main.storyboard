@@ -149,11 +149,30 @@
                     </navigationItem>
                     <connections>
                         <outlet property="collection" destination="QSA-9f-T9v" id="3rR-Lc-Aiz"/>
+                        <segue destination="H2V-zd-Yx4" kind="showDetail" identifier="HomeDetailVC" id="oEY-pg-eP1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1687.2" y="-321.58920539730138"/>
+        </scene>
+        <!--Home DetailVC-->
+        <scene sceneID="MrW-Br-uFw">
+            <objects>
+                <viewController id="H2V-zd-Yx4" customClass="HomeDetailVC" customModule="Saucesy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6mx-JA-dDs"/>
+                        <viewControllerLayoutGuide type="bottom" id="dOn-kF-1ZU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jXF-Hw-4wb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rsg-WO-xWj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2386" y="-321"/>
         </scene>
         <!--Liked-->
         <scene sceneID="bkm-iK-iQZ">

@@ -16,6 +16,7 @@
 		99671C2D1DE800D600FD6793 /* recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99671C2C1DE800D600FD6793 /* recipe.swift */; };
 		99671C301DE8162400FD6793 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99671C2F1DE8162400FD6793 /* RecipeCell.swift */; };
 		99671C361DE89AB500FD6793 /* dropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99671C351DE89AB500FD6793 /* dropShadow.swift */; };
+		99671C3B1DE8C4E300FD6793 /* HomeDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99671C3A1DE8C4E300FD6793 /* HomeDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		99671C2C1DE800D600FD6793 /* recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = recipe.swift; sourceTree = "<group>"; };
 		99671C2F1DE8162400FD6793 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 		99671C351DE89AB500FD6793 /* dropShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dropShadow.swift; sourceTree = "<group>"; };
+		99671C3A1DE8C4E300FD6793 /* HomeDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +64,10 @@
 		99671C161DE7B61200FD6793 /* Saucesy */ = {
 			isa = PBXGroup;
 			children = (
-				99671C2E1DE815FA00FD6793 /* View */,
 				99671C2B1DE800AC00FD6793 /* Model */,
+				99671C2E1DE815FA00FD6793 /* View */,
+				99671C371DE8C47B00FD6793 /* Controller */,
 				99671C171DE7B61200FD6793 /* AppDelegate.swift */,
-				99671C191DE7B61200FD6793 /* HomeVC.swift */,
 				99671C1B1DE7B61200FD6793 /* SecondViewController.swift */,
 				99671C1D1DE7B61200FD6793 /* Main.storyboard */,
 				99671C201DE7B61200FD6793 /* Assets.xcassets */,
@@ -90,6 +92,15 @@
 				99671C351DE89AB500FD6793 /* dropShadow.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		99671C371DE8C47B00FD6793 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				99671C191DE7B61200FD6793 /* HomeVC.swift */,
+				99671C3A1DE8C4E300FD6793 /* HomeDetailVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +181,7 @@
 				99671C181DE7B61200FD6793 /* AppDelegate.swift in Sources */,
 				99671C1A1DE7B61200FD6793 /* HomeVC.swift in Sources */,
 				99671C361DE89AB500FD6793 /* dropShadow.swift in Sources */,
+				99671C3B1DE8C4E300FD6793 /* HomeDetailVC.swift in Sources */,
 				99671C2D1DE800D600FD6793 /* recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
