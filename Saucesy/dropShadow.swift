@@ -20,7 +20,5 @@ class dropShadow: UIView {
         self.layer.shadowOpacity = 1.0
         self.layer.masksToBounds = false
         self.layer.shadowPath = UIBezierPath(rect: self.layer.bounds).cgPath
-        self.layer.shouldRasterize = true
     }
-
 }
