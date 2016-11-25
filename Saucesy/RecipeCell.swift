@@ -12,6 +12,18 @@ class RecipeCell: UICollectionViewCell {
     
     @IBOutlet weak var recipeImage: UIImageView!
     @IBOutlet weak var recipeName: UILabel!
-    @IBOutlet
+    @IBOutlet weak var recipeIngredients: UILabel!
+    @IBOutlet weak var recipeCalories: UILabel!
+    @IBOutlet weak var recipeServings: UILabel!
+    
+    var singleRecipe: Recipe!
+    
+    func configureCell(singleRecipe: Recipe){
+        
+        self.singleRecipe = singleRecipe
+        
+        recipeName.text = self.singleRecipe.name
+        
+    }
     
 }
