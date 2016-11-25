@@ -14,6 +14,9 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        //Changes the title text "Saucesy" to logo
+        let logo = UIImage(named: "logo.png")
+        navigationItem.titleView = UIImageView(image: logo)
         
     }
 

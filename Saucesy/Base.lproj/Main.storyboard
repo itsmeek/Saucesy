@@ -152,7 +152,7 @@
     </scenes>
     <resources>
         <image name="basketBarIcon" width="23" height="22"/>
-        <image name="filterNavIcon" width="20" height="21"/>
+        <image name="filterNavIcon" width="22" height="21"/>
         <image name="heartBarItem" width="22" height="20"/>
         <image name="homeBarItem" width="21" height="22"/>
         <image name="listBarItem" width="19" height="22"/>
