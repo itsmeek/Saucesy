@@ -11,14 +11,18 @@ import Alamofire
 
 class model_Recipe {
     
-    private var _model_recipeName: String!
+    var model_recipeNames: Array = [String]()
     
-    var model_recipeName: String {
-        if _model_recipeName == nil{
-            _model_recipeName = ""
-        }
-        return _model_recipeName
-    }
+
+    
+//    private var _model_recipeName: String!
+//    
+//    var model_recipeName: String {
+//        if _model_recipeName == nil{
+//            _model_recipeName = ""
+//        }
+//        return _model_recipeName
+//    }
     
     func downloadRecipe(completed: @escaping DownloadComplete){
         
@@ -34,8 +38,7 @@ class model_Recipe {
                     for x in 0..<hits.count{
                         if let recipe = hits[x]["recipe"] as? Dictionary<String, AnyObject>{
                             if let label = recipe["label"] as? String{
-                                self._model_recipeName = label
-                                print(self.model_recipeName)
+                                self.model_recipeNames.append(label)
                             }
                         }
                     }

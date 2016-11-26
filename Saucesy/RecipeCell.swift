@@ -14,5 +14,8 @@ class RecipeCell: UICollectionViewCell {
     
     @IBOutlet weak var view_recipeName: UILabel!
 
-    
+    func configureCell(recipeName: String){
+        view_recipeName.text = recipeName
+    }
+
 }

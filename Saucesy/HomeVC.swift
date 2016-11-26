@@ -13,7 +13,7 @@ class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     @IBOutlet weak var collection: UICollectionView!
 
     
-    var _controller_recipe = model_Recipe()
+    var controller_recipe = model_Recipe()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,15 +25,11 @@ class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         collection.dataSource = self
         collection.delegate = self
         
-        _controller_recipe.downloadRecipe {
-            print("finished")
-            self.updateUI()
-        }
-
-    }
-    
-    func updateUI(){
+        self.automaticallyAdjustsScrollViewInsets = false
         
+        controller_recipe.downloadRecipe {
+            self.collection.reloadData()
+        }
     }
 
     
@@ -41,7 +37,7 @@ class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecipeCell", for: indexPath) as? RecipeCell {
             
-            cell.view_recipeName.text = "Test"
+            cell.configureCell(recipeName: controller_recipe.model_recipeNames[indexPath.row])
             
             return cell
         } else {
@@ -54,10 +50,13 @@ class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 30
+        
+        return controller_recipe.model_recipeNames.count
+        
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
+        
         return 1
     }
     
