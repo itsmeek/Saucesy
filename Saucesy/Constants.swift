@@ -9,4 +9,5 @@
 import Foundation
 
 let URL_BASE = "https://api.edamam.com/search?_app_id=&_app_key=&q=basil"
-//let APP
+let APP_ID = app_id(named: "api_id")
+let APP_KEY = app_key(named: "api_key")
