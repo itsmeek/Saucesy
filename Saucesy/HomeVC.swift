@@ -11,7 +11,9 @@ import UIKit
 class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var collection: UICollectionView!
-
+    
+    var recipe = Recipe()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -22,6 +24,11 @@ class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         
         collection.dataSource = self
         collection.delegate = self
+        
+        print(RECIPE_URL)
+        recipe.downloadRecipe {
+            //Setup UI to load downloaded data
+        }
         
     }
 
@@ -54,10 +61,5 @@ class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.bounds.width, height: CGFloat(362))
     }
-    
-
-    
-
-
 }
 
