@@ -9,15 +9,15 @@
 import Foundation
 import Alamofire
 
-class Recipe {
+class model_Recipe {
     
-    var _recipeName: String!
+    private var _model_recipeName: String!
     
-    var recipeName: String {
-        if _recipeName == nil{
-            _recipeName = ""
+    var model_recipeName: String {
+        if _model_recipeName == nil{
+            _model_recipeName = ""
         }
-        return _recipeName
+        return _model_recipeName
     }
     
     func downloadRecipe(completed: @escaping DownloadComplete){
@@ -26,15 +26,21 @@ class Recipe {
         let recipeURL = URL(string: RECIPE_URL)!
         
         Alamofire.request(recipeURL).responseJSON { response in
-            print("original URL request: \(response.request)")
-            print("HTTP URL response: \(response.response)")
-            print("server data: \(response.data)")     //
-            print("result of response serialization: \(response.result)")   
             
-            if let JSON = response.result.value {
-                print("JSON: \(JSON)")
+            if let dict = response.result.value as? Dictionary<String,AnyObject> {
+                
+                if let hits = dict["hits"] as? [Dictionary<String,AnyObject>]{
+                    
+                    for x in 0..<hits.count{
+                        if let recipe = hits[x]["recipe"] as? Dictionary<String, AnyObject>{
+                            if let label = recipe["label"] as? String{
+                                self._model_recipeName = label
+                                print(self.model_recipeName)
+                            }
+                        }
+                    }
+                }
             }
-            
             completed()
         }
     }

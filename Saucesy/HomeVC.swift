@@ -11,12 +11,12 @@ import UIKit
 class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var collection: UICollectionView!
+
     
-    var recipe = Recipe()
+    var _controller_recipe = model_Recipe()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         //Changes the title text "Saucesy" to logo
         let logo = UIImage(named: "logo.png")
@@ -25,21 +25,24 @@ class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         collection.dataSource = self
         collection.delegate = self
         
-        print(RECIPE_URL)
-        recipe.downloadRecipe {
-            //Setup UI to load downloaded data
+        _controller_recipe.downloadRecipe {
+            print("finished")
+            self.updateUI()
         }
+
+    }
+    
+    func updateUI(){
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecipeCell", for: indexPath) as? RecipeCell {
+            
+            cell.view_recipeName.text = "Test"
+            
             return cell
         } else {
             return UICollectionViewCell()
