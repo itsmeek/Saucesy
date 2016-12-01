@@ -48,30 +48,25 @@
                                                                     <color key="textColor" red="0.1764705882352941" green="0.25098039215686274" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOt-8K-GOW">
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="height" constant="58" id="wHs-rl-UzB"/>
-                                                                    </constraints>
-                                                                    <string key="text">1 can (29 oz) pumpkin puree, 1 cup brown sugar, ¾ cup water, 1 tsp. vanilla extract, 1 tsp. cinnamon, 1 tsp. ground ginger
-
-  </string>
+                                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="1 can (29 oz) pumpkin puree, 1 cup brown sugar, ¾ cup water, 1 tsp. vanilla extract, 1 tsp. cinnamon, 1 tsp. ground ginger" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spK-fT-oW3" customClass="topAlignedText" customModule="Saucesy" customModuleProvider="target">
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                                    <color key="textColor" red="0.34901960784313724" green="0.41176470588235292" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                                                    <color key="textColor" red="0.34901960784313724" green="0.41176470588235292" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
+                                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                </textView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zTQ-g5-y8n">
                                                                     <subviews>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Acw-QF-y7h">
-                                                                            <frame key="frameInset" width="95" height="27"/>
+                                                                            <frame key="frameInset" width="95" height="17"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1033" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5X-Hn-X7P">
-                                                                                    <frame key="frameInset" width="29" height="27"/>
+                                                                                    <frame key="frameInset" width="29" height="17"/>
                                                                                     <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
                                                                                     <color key="textColor" red="0.91764705882352937" green="0.32941176470588235" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="CALORIES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkV-YU-1Gw">
-                                                                                    <frame key="frameInset" minX="32" width="63" height="27"/>
+                                                                                    <frame key="frameInset" minX="32" width="63" height="17"/>
                                                                                     <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
                                                                                     <color key="textColor" red="0.1764705882352941" green="0.25098039215686274" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                     <nil key="highlightedColor"/>
@@ -79,16 +74,16 @@
                                                                             </subviews>
                                                                         </stackView>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="48A-8p-Hal">
-                                                                            <frame key="frameInset" minX="105" width="74" height="27"/>
+                                                                            <frame key="frameInset" minX="105" width="74" height="17"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcs-3H-Uea">
-                                                                                    <frame key="frameInset" width="8" height="27"/>
+                                                                                    <frame key="frameInset" width="8" height="17"/>
                                                                                     <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
                                                                                     <color key="textColor" red="0.91764705882352937" green="0.32941176470588235" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="SERVINGS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIp-Tv-LyM">
-                                                                                    <frame key="frameInset" minX="11" width="63" height="27"/>
+                                                                                    <frame key="frameInset" minX="11" width="63" height="17"/>
                                                                                     <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
                                                                                     <color key="textColor" red="0.1764705882352941" green="0.25098039215686274" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                     <nil key="highlightedColor"/>
@@ -98,10 +93,6 @@
                                                                     </subviews>
                                                                 </stackView>
                                                             </subviews>
-                                                            <constraints>
-                                                                <constraint firstItem="vOt-8K-GOW" firstAttribute="leading" secondItem="Rzw-nB-a9a" secondAttribute="leading" id="Gy5-Iw-WwQ"/>
-                                                                <constraint firstAttribute="trailing" secondItem="vOt-8K-GOW" secondAttribute="trailing" id="TmC-NH-tM3"/>
-                                                            </constraints>
                                                         </stackView>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drW-9i-X8r" userLabel="likeButton">
                                                             <constraints>
@@ -134,8 +125,10 @@
                                             <constraint firstAttribute="bottom" secondItem="ema-2Q-KSJ" secondAttribute="bottom" constant="1" id="t3M-4L-gUy"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="view_recipeIngredients" destination="vOt-8K-GOW" id="lff-wj-Hxx"/>
+                                            <outlet property="view_recipCalories" destination="o5X-Hn-X7P" id="xBN-P5-eKn"/>
+                                            <outlet property="view_recipeIngredients" destination="spK-fT-oW3" id="Uxb-by-vSu"/>
                                             <outlet property="view_recipeName" destination="R5W-Xu-nRy" id="Ptn-iS-fXc"/>
+                                            <outlet property="view_recipeServings" destination="jcs-3H-Uea" id="j0v-qW-MQ8"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

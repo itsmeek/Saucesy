@@ -14,6 +14,8 @@ class model_Recipe {
     struct structure_recipe {
         let name: String!
         let ingredients: Array<String>!
+        let calories: Int!
+        let servings: Int!
     }
     
     typealias jsonStandard = Dictionary<String,AnyObject>
@@ -42,12 +44,13 @@ class model_Recipe {
                     
                     for x in 0..<hits.count{
                         if let recipe = hits[x]["recipe"] as? jsonStandard{
-                            let label = recipe["label"] as? String
-                            let ingredientLines = recipe["ingredientLines"] as? [String]
-                            self.model_recipe.append(structure_recipe.init(name: label, ingredients: ingredientLines))
+                            let name = recipe["label"] as? String
+                            let ingredients = recipe["ingredientLines"] as? [String]
+                            let calories = recipe["calories"] as? Int
+                            let servings = recipe["yield"] as? Int
+                            self.model_recipe.append(structure_recipe.init(name: name, ingredients: ingredients, calories: calories, servings: servings))
                         }
                     }
-                    
                 }
             }
             completed()

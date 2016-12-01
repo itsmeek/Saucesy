@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		991BF7B91DF02D7500C707A8 /* topAlignedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991BF7B81DF02D7500C707A8 /* topAlignedText.swift */; };
 		99671C181DE7B61200FD6793 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99671C171DE7B61200FD6793 /* AppDelegate.swift */; };
 		99671C1A1DE7B61200FD6793 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99671C191DE7B61200FD6793 /* HomeVC.swift */; };
 		99671C1C1DE7B61200FD6793 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99671C1B1DE7B61200FD6793 /* SecondViewController.swift */; };
@@ -27,6 +28,7 @@
 		46A20CE458C369FDD2613C03 /* Pods_Saucesy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Saucesy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55CB0566F471048D060EFC88 /* Pods-Saucesy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saucesy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Saucesy/Pods-Saucesy.debug.xcconfig"; sourceTree = "<group>"; };
 		95701396CE00A11BB9443FBA /* Pods-Saucesy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saucesy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Saucesy/Pods-Saucesy.release.xcconfig"; sourceTree = "<group>"; };
+		991BF7B81DF02D7500C707A8 /* topAlignedText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = topAlignedText.swift; sourceTree = "<group>"; };
 		99671C141DE7B61200FD6793 /* Saucesy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Saucesy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99671C171DE7B61200FD6793 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99671C191DE7B61200FD6793 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				99671C471DE9E85200FD6793 /* RecipeCell.swift */,
 				99671C1B1DE7B61200FD6793 /* SecondViewController.swift */,
 				99671C351DE89AB500FD6793 /* dropShadow.swift */,
+				991BF7B81DF02D7500C707A8 /* topAlignedText.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			files = (
 				99671C441DE9092300FD6793 /* keys.swift in Sources */,
 				99671C1C1DE7B61200FD6793 /* SecondViewController.swift in Sources */,
+				991BF7B91DF02D7500C707A8 /* topAlignedText.swift in Sources */,
 				99671C181DE7B61200FD6793 /* AppDelegate.swift in Sources */,
 				99671C481DE9E85200FD6793 /* RecipeCell.swift in Sources */,
 				99671C1A1DE7B61200FD6793 /* HomeVC.swift in Sources */,
@@ -321,6 +325,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -371,6 +376,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -400,6 +406,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 55CB0566F471048D060EFC88 /* Pods-Saucesy.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X3J8HXL99A;
 				INFOPLIST_FILE = Saucesy/Info.plist;
@@ -414,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 95701396CE00A11BB9443FBA /* Pods-Saucesy.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X3J8HXL99A;
 				INFOPLIST_FILE = Saucesy/Info.plist;

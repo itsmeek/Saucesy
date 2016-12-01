@@ -34,7 +34,6 @@ class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         }
         
         
-        
     }
 
     
@@ -42,13 +41,14 @@ class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecipeCell", for: indexPath) as? RecipeCell {
             
-            let recipe = controller_recipe.model_recipe[indexPath.row].name
-            let ingredients_array = controller_recipe.model_recipe[indexPath.row].ingredients
-            let ingredients = ingredients_array?.joined(separator: ",")
+            let indexRow = controller_recipe.model_recipe[indexPath.row]
+            let recipe = indexRow.name
+            let ingredients_array = indexRow.ingredients
+            let ingredients = ingredients_array?.joined(separator: ". ")
+            let servings = indexRow.servings
+            let calories = indexRow.calories
             
-//            let ingredientsString: String = controller_recipe.model_ingredients[indexPath].joined(separator: ",")
-//            cell.configureCell(recipeName: controller_recipe.model_recipeNames[indexPath.row])
-            cell.configureCell(recipeName: recipe!, recipeIngredients: ingredients!)
+            cell.configureCell(recipeName: recipe!, recipeIngredients: ingredients!, recipeServings: servings!, recipeCalories: calories!)
             return cell
         } else {
             return UICollectionViewCell()
