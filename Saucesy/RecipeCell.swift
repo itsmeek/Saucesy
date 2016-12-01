@@ -8,14 +8,14 @@
 
 import UIKit
 
-
-
 class RecipeCell: UICollectionViewCell {
     
     @IBOutlet weak var view_recipeName: UILabel!
+    @IBOutlet weak var view_recipeIngredients: UILabel!
 
-    func configureCell(recipeName: String){
+    func configureCell(recipeName: String, recipeIngredients: String){
         view_recipeName.text = recipeName
+        view_recipeIngredients.text = recipeIngredients
     }
 
 }

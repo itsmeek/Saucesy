@@ -11,12 +11,17 @@ import Alamofire
 
 class model_Recipe {
     
-    var model_recipeNames: Array = [String]()
+    struct structure_recipe {
+        let name: String!
+        let ingredients: Array<String>!
+    }
     
-
+    typealias jsonStandard = Dictionary<String,AnyObject>
+    
+    var model_recipe: Array = [structure_recipe]()
     
 //    private var _model_recipeName: String!
-//    
+//
 //    var model_recipeName: String {
 //        if _model_recipeName == nil{
 //            _model_recipeName = ""
@@ -31,17 +36,18 @@ class model_Recipe {
         
         Alamofire.request(recipeURL).responseJSON { response in
             
-            if let dict = response.result.value as? Dictionary<String,AnyObject> {
+            if let dict = response.result.value as? jsonStandard {
                 
-                if let hits = dict["hits"] as? [Dictionary<String,AnyObject>]{
+                if let hits = dict["hits"] as? [jsonStandard]{
                     
                     for x in 0..<hits.count{
-                        if let recipe = hits[x]["recipe"] as? Dictionary<String, AnyObject>{
-                            if let label = recipe["label"] as? String{
-                                self.model_recipeNames.append(label)
-                            }
+                        if let recipe = hits[x]["recipe"] as? jsonStandard{
+                            let label = recipe["label"] as? String
+                            let ingredientLines = recipe["ingredientLines"] as? [String]
+                            self.model_recipe.append(structure_recipe.init(name: label, ingredients: ingredientLines))
                         }
                     }
+                    
                 }
             }
             completed()
