@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		991BF7B91DF02D7500C707A8 /* topAlignedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991BF7B81DF02D7500C707A8 /* topAlignedText.swift */; };
+		991BF7BB1DF0422100C707A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 991BF7BA1DF0422100C707A8 /* Images.xcassets */; };
 		99671C181DE7B61200FD6793 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99671C171DE7B61200FD6793 /* AppDelegate.swift */; };
 		99671C1A1DE7B61200FD6793 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99671C191DE7B61200FD6793 /* HomeVC.swift */; };
 		99671C1C1DE7B61200FD6793 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99671C1B1DE7B61200FD6793 /* SecondViewController.swift */; };
 		99671C1F1DE7B61200FD6793 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99671C1D1DE7B61200FD6793 /* Main.storyboard */; };
-		99671C211DE7B61200FD6793 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99671C201DE7B61200FD6793 /* Assets.xcassets */; };
 		99671C241DE7B61200FD6793 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99671C221DE7B61200FD6793 /* LaunchScreen.storyboard */; };
 		99671C2D1DE800D600FD6793 /* recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99671C2C1DE800D600FD6793 /* recipe.swift */; };
 		99671C361DE89AB500FD6793 /* dropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99671C351DE89AB500FD6793 /* dropShadow.swift */; };
@@ -29,12 +29,12 @@
 		55CB0566F471048D060EFC88 /* Pods-Saucesy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saucesy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Saucesy/Pods-Saucesy.debug.xcconfig"; sourceTree = "<group>"; };
 		95701396CE00A11BB9443FBA /* Pods-Saucesy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Saucesy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Saucesy/Pods-Saucesy.release.xcconfig"; sourceTree = "<group>"; };
 		991BF7B81DF02D7500C707A8 /* topAlignedText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = topAlignedText.swift; sourceTree = "<group>"; };
+		991BF7BA1DF0422100C707A8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		99671C141DE7B61200FD6793 /* Saucesy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Saucesy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99671C171DE7B61200FD6793 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99671C191DE7B61200FD6793 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		99671C1B1DE7B61200FD6793 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		99671C1E1DE7B61200FD6793 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		99671C201DE7B61200FD6793 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99671C231DE7B61200FD6793 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99671C251DE7B61200FD6793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99671C2C1DE800D600FD6793 /* recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = recipe.swift; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 				99671C3C1DE8D73500FD6793 /* Utilities */,
 				99671C171DE7B61200FD6793 /* AppDelegate.swift */,
 				99671C1D1DE7B61200FD6793 /* Main.storyboard */,
-				99671C201DE7B61200FD6793 /* Assets.xcassets */,
+				991BF7BA1DF0422100C707A8 /* Images.xcassets */,
 				99671C221DE7B61200FD6793 /* LaunchScreen.storyboard */,
 				99671C251DE7B61200FD6793 /* Info.plist */,
 			);
@@ -211,8 +211,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				99671C421DE8E22900FD6793 /* keys.plist in Resources */,
+				991BF7BB1DF0422100C707A8 /* Images.xcassets in Resources */,
 				99671C241DE7B61200FD6793 /* LaunchScreen.storyboard in Resources */,
-				99671C211DE7B61200FD6793 /* Assets.xcassets in Resources */,
 				99671C1F1DE7B61200FD6793 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
