@@ -21,5 +21,4 @@ class RecipeCell: UICollectionViewCell {
         view_recipeServings.text = "\(recipeServings)"
         view_recipCalories.text = "\(recipeCalories)"
     }
-
 }
