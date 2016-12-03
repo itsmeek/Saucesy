@@ -32,23 +32,20 @@ class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         controller_recipe.downloadRecipe {
             self.collection.reloadData()
         }
-        
-        
     }
-
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecipeCell", for: indexPath) as? RecipeCell {
             
-            let indexRow = controller_recipe.model_recipe[indexPath.row]
+            let indexRow = controller_recipe.model_recipe_array[indexPath.row]
             let recipe = indexRow.name
             let ingredients_array = indexRow.ingredients
-            let ingredients = ingredients_array?.joined(separator: ". ")
+            let ingredients = ingredients_array.joined(separator: ". ")
             let servings = indexRow.servings
             let calories = indexRow.calories
             
-            cell.configureCell(recipeName: recipe!, recipeIngredients: ingredients!, recipeServings: servings!, recipeCalories: calories!)
+            cell.configureCell(recipeName: recipe, recipeIngredients: ingredients, recipeServings: servings, recipeCalories: calories)
             return cell
         } else {
             return UICollectionViewCell()
@@ -57,11 +54,12 @@ class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        performSegue(withIdentifier: "HomeDetailVC", sender: controller_recipe)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return controller_recipe.model_recipe.count
+        return controller_recipe.model_recipe_array.count
         
     }
     
@@ -74,5 +72,16 @@ class HomeVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         return CGSize(width: collectionView.bounds.width, height: CGFloat(362))
     }
     
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "HomeDetailVC" {
+//            if let detailVC = segue.destination as? HomeDetailVC{
+////                detailVC.hidesBottomBarWhenPushed = true
+////                detailVC.navigationController?.isNavigationBarHidden = true
+//                if let recipe_items = sender as? model_Recipe{
+//                    detailVC.detail_recipe = recipe_items
+//                }
+//            }
+//        }
+//    }
 }
 
